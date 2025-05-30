@@ -12390,3 +12390,20 @@ img {
     width: auto;
   }
 }
+
+/* Default logo size */
+.logo-scroll,
+.logo-mobile {
+    height: 60px; /* Adjust as needed */
+    width: auto;
+}
+
+/* Smaller size for mobile view */
+@media screen and (max-width: 768px) {
+    .logo-mobile {
+        height: 40px; /* Reduce height for mobile */
+    }
+}
+html, body {
+    overflow-x: hidden;
+}
