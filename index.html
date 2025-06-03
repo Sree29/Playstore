@@ -103,35 +103,44 @@
 
                                 <!-- logo close -->
                             </div>
-                            <div class="de-flex-col header-col-mid">
-                                <ul id="mainmenu">
-                                    <li><a class="menu-item" href="index.html">Home</a>
+  
+<script>
+    window.addEventListener('scroll', function () {
+        const header = document.getElementById('headerMenu');
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+</script>
 
-                                    </li>
-                                    <li><a class="menu-item" href="services.html">Services</a>
-                                        <ul>
-                                            <li><a class="menu-item" href="services.html">All Services</a></li>
-                                            <!-- <li><a class="menu-item" href="single-repair.html">Single Repair</a></li>
-                                            <li><a class="menu-item" href="single-repair-dark.html">Single Repair Dark</a></li> -->
-                                            <li><a class="menu-item" href="problems-we-repair.html">Problems We
-                                                    Repair</a></li>
-                                            <li><a class="menu-item" href="why-choose-us.html">Why Choose Us</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a class="menu-item" href="book-repair.html">Book a Repair</a></li>
-                                    <li><a class="menu-item" href="track.html">Track My Repair</a></li>
-                                    <li><a class="menu-item" href="blog.html">Blog</a>
-                                        <!-- <ul>
-                                            <li><a class="menu-item" href="blog.html">Blog </a></li>
-                                            <li><a class="menu-item" href="blog-2.html">Blog Style 2</a></li>
-                                            <li><a class="menu-item" href="blog-single.html">Blog Single</a></li>
-                                        </ul> -->
-                                    </li>
-                                    <li><a class="menu-item" href="contact.html">Contact</a>
+<style>
+/* Default color */
+#headerMenu .menu-item {
+    
+    transition: color 0.3s ease;
+}
 
-                                    </li>
-                                </ul>
-                            </div>
+/* On scroll */
+#headerMenu.scrolled .menu-item {
+    color: #f86c44;
+}
+
+
+</style>
+                         
+<div class="de-flex-col header-col-mid" id="headerMenu">
+    <ul id="mainmenu">
+        <li><a class="menu-item" href="index.html">Home</a></li>
+        <li><a class="menu-item" href="services.html">Services</a></li>
+        <li><a class="menu-item" href="book-repair.html">Book a Repair</a></li>
+        <li><a class="menu-item" href="track.html">Track My Repair</a></li>
+        <li><a class="menu-item" href="blog.html">Blog</a></li>
+        <li><a class="menu-item" href="contact.html">Contact</a></li>
+    </ul>
+</div>
+
                             <div class="de-flex-col">
                                 <div class="menu_side_area">
                                     <span id="menu-btn"></span>
@@ -311,7 +320,7 @@
                     <div class="row g-4">
 
                         <div class="col-md-12 wow fadeInUp">
-                            <h2 class="mb-8">Our Brands</h2>
+                            <h2 class="mb-8" style="color: #f86c44;">Our Brands</h2>
 
                             <div id="owl-logo" class="logo-carousel no-alpha owl-carousel owl-theme">
                                 <img src="images/logo-dark/logo1.png" class="img-fluid px-4" alt="">
@@ -360,7 +369,7 @@
                     <div class="row g-4 mb-2 justify-content-center">
                         <div class="col-lg-5 text-center">
                             <div class="subtitle s2 wow fadeInUp mb-2">Top Reasons</div>
-                            <h2 class="wow fadeInUp" data-wow-delay=".2s">Why Choose Us</h2>
+                            <h2 class="wow fadeInUp" data-wow-delay=".2s" style="color: #f86c44;">Why Choose Us</h2>
                         </div>
                     </div>
                     <div class="row g-4">
@@ -532,7 +541,7 @@
                                 <div class="spacer-double"></div>
                                 <div class="ps-lg-5">
                                     <div class="subtitle wow fadeInUp mb-3">Our Skilled Technicians</div>
-                                    <h2 class="wow fadeInUp">Trusted Experts in Mobile & Laptop Repairs</h2>
+                                    <h2 class="wow fadeInUp" style="color: #f86c44;">Trusted Experts in Mobile & Laptop Repairs</h2>
                                     <p class="wow fadeInUp">With years of experience in servicing mobiles and laptops,
                                         our certified technicians handle everything from screen replacements to hardware
                                         diagnostics. We’re dedicated to providing fast, reliable repairs to keep your
@@ -554,7 +563,7 @@
                     <div class="row g-4 mb-2 justify-content-center">
                         <div class="col-lg-5 text-center">
                             <div class="subtitle s2 wow fadeInUp mb-2">Issues We Repair</div>
-                            <h2 class="wow fadeInUp" data-wow-delay=".2s">Your one-stop solution for all gadget repair
+                            <h2 class="wow fadeInUp" data-wow-delay=".2s" style="color: #f86c44;">Your one-stop solution for all gadget repair
                                 needs</h2>
                         </div>
                     </div>
@@ -687,7 +696,7 @@
                     <div class="row g-4 mb-4">
                         <div class="col-lg-6 offset-lg-3 text-center">
                             <div class="subtitle wow fadeInUp mb-3">Testimonials</div>
-                            <h2 class="wow fadeInUp" data-wow-delay=".2s">Our Happy Customers</h2>
+                            <h2 class="wow fadeInUp" data-wow-delay=".2s" style="color: #f86c44;">Our Happy Customers</h2>
                         </div>
                     </div>
 
@@ -873,7 +882,7 @@
                                 <div class="spacer-double"></div>
                                 <div class="ps-lg-5">
                                     <div class="subtitle s2 wow fadeInUp mb-2">Questions</div>
-                                    <h2 class="wow fadeInUp mb-2" data-wow-delay=".2s">Frequently asked questions</h2>
+                                    <h2 class="wow fadeInUp mb-2" data-wow-delay=".2s" style="color: #f86c44;">Frequently asked questions</h2>
                                     <div class="accordion s2 wow fadeInUp">
                                         <div class="accordion-section">
                                             <div class="accordion-section-title" data-tab="#accordion-a1">
