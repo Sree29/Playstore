@@ -258,7 +258,9 @@ a.btn-line.hover,
 .pricing-table.table-featured a.btn-main,
 .page-item.active .page-link,
 .de-marquee-list .d-item-block.bg-color-2{
-    background: var(--secondary-color);
+    /* background: var(--secondary-color); */
+     background: #f86c44;
+    
 }
 
 section.dark {

@@ -79,6 +79,7 @@ Table of content:
   --bg-grey: #d8e1e1;
   --bg-gradient-1: 0deg, rgba(var(--primary-color-rgb), .1) 0%, rgba(var(--secondary-color-rgb), .2) 100%;
   --swiper-theme-color: var(--secondary-color);
+
   --rounded-1: 15px;
   --button-rounded: 30px;
   --border-color:#bbbbbb;
@@ -779,7 +780,8 @@ header.header-light #mainmenu a {
 }
 
 #mainmenu li a.active{
-  color:var(--primary-color) !important;
+  /* color:var(--primary-color) !important; */
+  color: #f86c44 !important;
 }
 
 #mainmenu li ul {
@@ -2756,7 +2758,8 @@ footer:not(.footer-light) #form_subscribe.form-dark input[type=text] {
 }
 
 .crumb li {
-  color: var(--secondary-color);
+  /* color: var(--secondary-color); */
+  color: #f86c44;
   display: inline;
   text-decoration: none;
   letter-spacing: 0;

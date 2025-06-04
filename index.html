@@ -18,10 +18,7 @@
     <link href="css/coloring.css" rel="stylesheet" type="text/css">
     <!-- color scheme -->
     <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-
-    <style>
+     <style>
         .service-img {
             width: 100% !important;
             height: 250px !important;
@@ -37,12 +34,14 @@
             width: auto;
             display: block;
             margin: 0 auto;
+            
         }
 
         .d-number.bg-color-2 {
             background-color: #f86c44 !important;
             /* Bootstrap blue, for example */
         }
+  
     </style>
 
 </head>
@@ -55,13 +54,14 @@
         <style>
             span a:hover {
                 color:
-                    #f86c44;
+                    #f86c44 !important;
                 transition: color 0.3s ease;
             }
+            
+
+
         </style>
         <!-- <div class="scrollbar-v show-on-scroll"></div> -->
-
-
 
         <!-- page preloader begin -->
         <!-- <div id="de-loader"></div> -->
@@ -114,24 +114,37 @@
                                         <img class="logo-mobile" src="images/logo.PNG" alt="">
                                     </a>
                                 </div>
-
                                 <!-- logo close -->
                             </div>
-
-
-
-
-                            <div class="de-flex-col header-col-mid" id="headerMenu">
+                            <div class="de-flex-col header-col-mid">
                                 <ul id="mainmenu">
-                                    <li><a class="menu-item" href="index.html">Home</a></li>
-                                    <li><a class="menu-item" href="services.html">Services</a></li>
+                                    <li><a class="menu-item active" href="index.html">Home</a>
+
+                                    </li>
+                                    <li><a class="menu-item" href="services.html">Services</a>
+                                        <ul>
+                                            <li><a class="menu-item active" href="services.html">All Services</a></li>
+                                            <!-- <li><a class="menu-item" href="single-repair.html">Single Repair</a></li>
+                                            <li><a class="menu-item" href="single-repair-dark.html">Single Repair Dark</a></li> -->
+                                            <li><a class="menu-item" href="problems-we-repair.html">Problems We
+                                                    Repair</a></li>
+                                            <li><a class="menu-item" href="why-choose-us.html">Why Choose Us</a></li>
+                                        </ul>
+                                    </li>
                                     <li><a class="menu-item" href="book-repair.html">Book a Repair</a></li>
                                     <li><a class="menu-item" href="track.html">Track My Repair</a></li>
-                                    <li><a class="menu-item" href="blog.html">Blog</a></li>
-                                    <li><a class="menu-item" href="contact.html">Contact</a></li>
+                                    <li><a class="menu-item" href="blog.html">Blog</a>
+                                        <!-- <ul>
+                                            <li><a class="menu-item" href="blog.html">Blog Default</a></li>
+                                            <li><a class="menu-item" href="blog-2.html">Blog Style 2</a></li>
+                                            <li><a class="menu-item" href="blog-single.html">Blog Single</a></li>
+                                        </ul> -->
+                                    </li>
+                                    <li><a class="menu-item" href="contact.html">Contact</a>
+
+                                    </li>
                                 </ul>
                             </div>
-
                             <div class="de-flex-col">
                                 <div class="menu_side_area">
                                     <span id="menu-btn"></span>
@@ -177,7 +190,7 @@
                                                         href="book-repair.html"><span>Book a Repair</span></a>
                                                 </div>
                                                 <div class="col-lg-6 sm-hide">
-                                                    <img src="images/slider/laptop.webp" class="w-100 p-lg-5 p-0"
+                                                    <img src="images/slider/Untitled-1.png" class="w-100 p-lg-5 p-0"
                                                         alt="">
                                                 </div>
                                             </div>
@@ -217,13 +230,9 @@
 
 
                                                 <style>
-                                                   .img-orange {
-    filter: brightness(0) saturate(100%) 
-            invert(70%) sepia(74%) 
-            saturate(409%) hue-rotate(339deg) 
-            brightness(90%) contrast(100%);
-}
-
+                                                    .img-orange {
+                                                        filter: brightness(0) saturate(100%) invert(70%) sepia(74%) saturate(409%) hue-rotate(339deg) brightness(90%) contrast(100%);
+                                                    }
                                                 </style>
                                             </div>
                                         </div>

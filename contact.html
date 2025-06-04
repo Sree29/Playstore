@@ -19,7 +19,19 @@
     <!-- color scheme -->
     <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .widget ul li a:hover {
+            color: #f86c44;
+            /* Change to your desired hover color */
+            transition: color 0.3s ease;
+            /* Smooth transition */
+        }
 
+        .id-color-2 {
+            color: #f86c44;
+            /* replace with your desired color */
+        }
+    </style>
 
 </head>
 
@@ -28,10 +40,17 @@
         <div class="float-text show-on-scroll">
             <span><a href="#">Scroll to top</a></span>
         </div>
-        <div class="scrollbar-v show-on-scroll"></div>
+        <style>
+            span a:hover {
+                color:
+                    #f86c44 !important;
+                transition: color 0.3s ease;
+            }
+        </style>
+        <!-- <div class="scrollbar-v show-on-scroll"></div> -->
 
         <!-- page preloader begin -->
-        <div id="de-loader"></div>
+        <!-- <div id="de-loader"></div> -->
         <!-- page preloader close -->
 
         <!-- header begin -->
@@ -107,7 +126,7 @@
                                             <li><a class="menu-item" href="blog-single.html">Blog Single</a></li>
                                         </ul> -->
                                     </li>
-                                    <li><a class="menu-item" href="contact.html">Contact</a>
+                                    <li><a class="menu-item active" href="contact.html">Contact</a>
 
                                     </li>
                                 </ul>
@@ -135,66 +154,72 @@
 
             <section class="section-dark bg-dark-2 text-light relative no-top no-bottom overflow-hidden">
                 <div class="container-fluid position-relative half-fluid">
-                  <div class="container">
-                    <div class="row">
-                      <!-- Image -->
-                      <div class="col-lg-6 position-lg-absolute left-half h-100">
-                        <div class="image rounded-bottom-end-60" data-bgimage="url(images/background/Contact_bg.jpg) center"></div>
-                      </div>
-                      <!-- Text -->
-                      <div class="col-lg-5 offset-lg-7">
-                            <div class="spacer-double"></div>
-                            <div class="spacer-double sm-hide"></div>
-                            <div class="spacer-double sm-hide"></div>
+                    <div class="container">
+                        <div class="row">
+                            <!-- Image -->
+                            <div class="col-lg-6 position-lg-absolute left-half h-100">
+                                <div class="image rounded-bottom-end-60"
+                                    data-bgimage="url(images/background/Contact_bg.jpg) center"></div>
+                            </div>
+                            <!-- Text -->
+                            <div class="col-lg-5 offset-lg-7">
+                                <div class="spacer-double"></div>
+                                <div class="spacer-double sm-hide"></div>
+                                <div class="spacer-double sm-hide"></div>
 
-                            <div class="subtitle s2 mb-3 wow fadeInUp" data-wow-delay=".0s">Contact Us</div>
-                            <h1 class="wow fadeInUp" data-wow-delay=".2s">Get In Touch</h1>
+                                <div class="subtitle s2 mb-3 wow fadeInUp" data-wow-delay=".0s">Contact Us</div>
+                                <h1 class="wow fadeInUp" data-wow-delay=".2s">Get In Touch</h1>
 
-                            <form name="contactForm" id="contact_form" method="post" action="#">
-                                <div class="row g-4">
-                                    <div class="col-lg-12">
-                                        <div class="field-set">
-                                            <input type="text" name="Name" id="name" class="form-control" placeholder="Your Name" required>
-                                        </div>
+                                <form name="contactForm" id="contact_form" method="post" action="#">
+                                    <div class="row g-4">
+                                        <div class="col-lg-12">
+                                            <div class="field-set">
+                                                <input type="text" name="Name" id="name" class="form-control"
+                                                    placeholder="Your Name" required>
+                                            </div>
 
-                                        <div class="field-set">
-                                            <input type="text" name="Email" id="email" class="form-control" placeholder="Your Email" required>
-                                        </div>
+                                            <div class="field-set">
+                                                <input type="text" name="Email" id="email" class="form-control"
+                                                    placeholder="Your Email" required>
+                                            </div>
 
-                                        <div class="field-set">
-                                            <input type="text" name="phone" id="phone" class="form-control" placeholder="Your Phone" required>
-                                        </div>
+                                            <div class="field-set">
+                                                <input type="text" name="phone" id="phone" class="form-control"
+                                                    placeholder="Your Phone" required>
+                                            </div>
 
-                                        <div class="field-set">
-                                            <textarea name="message" id="message" class="form-control h-100px" placeholder="Your Message" required></textarea>
+                                            <div class="field-set">
+                                                <textarea name="message" id="message" class="form-control h-100px"
+                                                    placeholder="Your Message" required></textarea>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                    
-                                
-                                <!-- <div class="g-recaptcha" data-sitekey="6LdW03QgAAAAAJko8aINFd1eJUdHlpvT4vNKakj6"></div> -->
-                                <div id='submit' class="mt-3">
-                                    <input type='submit' id='send_message' value='Send Message' class="btn-main">
-                                </div>
 
-                                <div id="success_message" class='success'>
-                                    Your message has been sent successfully. Refresh this page if you want to send more messages.
-                                </div>
-                                <div id="error_message" class='error'>
-                                    Sorry there was an error sending your form.
-                                </div>
-                            </form>
 
-                            <div class="spacer-double"></div>
-                            <div class="spacer-double sm-hide"></div>
-                            <div class="spacer-double sm-hide"></div>
-                      </div>
+                                    <!-- <div class="g-recaptcha" data-sitekey="6LdW03QgAAAAAJko8aINFd1eJUdHlpvT4vNKakj6"></div> -->
+                                    <div id='submit' class="mt-3">
+                                        <input type='submit' id='send_message' value='Send Message' class="btn-main">
+                                    </div>
+
+                                    <div id="success_message" class='success'>
+                                        Your message has been sent successfully. Refresh this page if you want to send
+                                        more messages.
+                                    </div>
+                                    <div id="error_message" class='error'>
+                                        Sorry there was an error sending your form.
+                                    </div>
+                                </form>
+
+                                <div class="spacer-double"></div>
+                                <div class="spacer-double sm-hide"></div>
+                                <div class="spacer-double sm-hide"></div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
             </section>
 
-                    
+
 
         </div>
         <!-- content close -->
@@ -205,11 +230,16 @@
                     <div class="col-lg-4 col-sm-6">
                         <img src="images/logo.PNG" class="w-150px" alt="" width="80" height="auto">
                         <div class="spacer-20"></div>
-                        <p>At Playastore, we specialize in comprehensive mobile repair services, ensuring your devices are in expert hands. With a team of certified technicians and a commitment to quality, we restore your gadgets to their optimal performance.</p>
+                        <p>At Playastore, we specialize in comprehensive mobile repair services, ensuring your devices
+                            are in expert hands. With a team of certified technicians and a commitment to quality, we
+                            restore your gadgets to their optimal performance.</p>
 
                         <div class="social-icons mb-sm-30">
-                            <a href="https://www.facebook.com/share/16HYRLqY2g/?mibextid=wwXIfr"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="https://www.instagram.com/playstore_mobile_service_store?igsh=ZmdubTU5NXVvcDdp&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/share/16HYRLqY2g/?mibextid=wwXIfr"><i
+                                    class="fa-brands fa-facebook-f"></i></a>
+                            <a
+                                href="https://www.instagram.com/playstore_mobile_service_store?igsh=ZmdubTU5NXVvcDdp&utm_source=qr"><i
+                                    class="fa-brands fa-instagram"></i></a>
                             <a href="https://www.youtube.com/@Tech-No1"><i class="fa-brands fa-youtube"></i></a>
                         </div>
                     </div>
@@ -253,7 +283,7 @@
 
                             <div class="fw-bold text-white"><i class="icofont-location-pin me-2 id-color-2"></i>Workshop
                                 Location</div>
-                           Parass La, Adoor, Kerala 691523,
+                            Parass La, Adoor, Kerala 691523,
 
                             <div class="spacer-20"></div>
 
@@ -347,21 +377,27 @@
             <div class="spacer-30-line"></div>
 
             <h5>Contact Us</h5>
-            <div><i class="icofont-clock-time me-2 op-5"></i>Monday - Saturday 09.30AM - 09.30PM<br>Sunday - 11AM-9.30PM</div>
+            <div><i class="icofont-clock-time me-2 op-5"></i>Monday - Saturday 09.30AM - 09.30PM<br>Sunday - 11AM-9.30PM
+            </div>
             <div><i class="icofont-location-pin me-2 op-5"></i>Parass La, Adoor, Kerala 691523</div>
             <div><i class="icofont-envelope me-2 op-5"></i>playstoreadoor@gmail.com</div>
 
             <div class="spacer-30-line"></div>
 
             <h5>About Us</h5>
-            <p>At Playastore, we specialize in comprehensive mobile repair services, ensuring your devices are in expert hands. With a team of certified technicians and a commitment to quality, we restore your gadgets to their optimal performance.</p>
+            <p>At Playastore, we specialize in comprehensive mobile repair services, ensuring your devices are in expert
+                hands. With a team of certified technicians and a commitment to quality, we restore your gadgets to
+                their optimal performance.</p>
 
             <div class="social-icons">
-                <a href="https://www.facebook.com/share/16HYRLqY2g/?mibextid=wwXIfr"><i class="fa-brands fa-facebook-f"></i></a>
-             
-                <a href="https://www.instagram.com/playstore_mobile_service_store?igsh=ZmdubTU5NXVvcDdp&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/share/16HYRLqY2g/?mibextid=wwXIfr"><i
+                        class="fa-brands fa-facebook-f"></i></a>
+
+                <a href="https://www.instagram.com/playstore_mobile_service_store?igsh=ZmdubTU5NXVvcDdp&utm_source=qr"><i
+                        class="fa-brands fa-instagram"></i></a>
                 <a href="https://www.youtube.com/@Tech-No1"><i class="fa-brands fa-youtube"></i></a>
-                <a href="https://wa.me/918848387678" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://wa.me/918848387678" aria-label="Chat on WhatsApp"><i
+                        class="fa-brands fa-whatsapp"></i></a>
 
             </div>
         </div>
